@@ -1,0 +1,111 @@
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Your custom styles here */
+
+/* ####################
+CONTAINER STYLES
+#################### */
+.custom-container{
+    padding: 16px 10%;
+}
+@media (max-width:600px){
+    .custom-container{
+        padding: 16px 16px;
+    }
+}
+
+@media (min-width:1200px){
+    .custom-container{
+        max-width: 1340px;
+        margin: 0 auto;
+    }
+}
+
+/* ####################
+PANEL STYLES
+#################### */
+.panel{
+    width: 100%;
+    padding: 25px;
+    height: 75px;
+    background-color: whitesmoke;
+}
+/* ####################
+HEADER STYLES
+#################### */
+.menu li.active{
+    background-color: #FF5480;
+    color: white;
+    border-radius: 4px;
+}
+
+/* ####################
+SUBSCRIBE STYLES
+#################### */
+.subscribe-input{
+    position: relative;
+    border-radius: 50px;
+
+}
+.subscribe-input input{
+    width: 400px;
+    max-width: 100%;
+    border-radius: 50px;
+    border: 2px solid transparent;
+
+}
+.subscribe-input input:focus{
+    outline: none;
+    border: 2px solid #FF5480;
+}
+.subscribe-input button{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #FF5480;
+    color: white;
+    border-radius: 50px;
+    
+}
+
+/* ####################
+ADDRESS PANEL STYLES
+#################### */
+.address-panel{
+    color: rgb(179, 179, 179);
+    position: relative;
+
+}
+.address-panel span{
+}
+.address-panel span:last-child{
+    /* color: grey; */
+}
+
+/* ####################
+BLOG POST STYLES
+#################### */
+
+#blog-post{}
+#blog-post .actions{
+    background-color: white;
+    height: fit-content;
+}
+
+#blog-content{
+    /* background-color: red; */
+}
+
+#blog-content p{
+    margin-bottom: 16px;
+    color: grey;
+}
+
+#blog-content h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black ;
+    margin-bottom: 16px;
+}
